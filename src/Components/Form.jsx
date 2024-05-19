@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Registro from './Registro';
-import '../Style/Form.css'
+import '../Styles/Form.module.css'
 
 const Form = () => {
   const [usuario, setUsuario] = useState({
