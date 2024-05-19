@@ -34,6 +34,14 @@ const Form = () => {
     }
   };
 
+  const borrar = () => {
+    setUsuario({
+      nombreCompleto: "",
+      edad: "",
+      dibujoFavorito: "",
+    });
+  };
+
   return (
     <>
       <form onSubmit={handleEnvio}>
@@ -52,6 +60,8 @@ const Form = () => {
           onChange={handleDibujoFavorito}
         />
         <button type="submit">Regristrar</button>
+        <br />
+        <button type="submit" onClick={borrar}>Borrar</button>
       </form>
       {mostrar && <Registro usuario={usuario} />}
       {error && (
